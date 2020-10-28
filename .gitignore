@@ -1,0 +1,5 @@
+build/
+dist/
+.idea/
+mess.egg-info/
+__pycache__/
