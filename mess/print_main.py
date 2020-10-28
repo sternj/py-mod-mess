@@ -29,7 +29,8 @@ def entrypoint():
         # Splice in the name of the file being executed instead of the profiler.
         print("MAIN ", __main__)
         the_globals["__file__"] = os.path.basename(sys.argv[1])
-        the_globals["__spec__"] = None
+        # This seems to be the solution
+        # the_globals["__spec__"] = None
         try:
 
             exec(code, the_globals, the_locals)
