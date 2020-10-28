@@ -1,3 +1,0 @@
-[console_scripts]
-mess = mess.__main__:main
-
